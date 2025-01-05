@@ -1,96 +1,64 @@
-# ![patientport logo](https://i.imgur.com/qWsX4Yw.png)
+# Patientport: Redefining Medical Data Security
 
-```shell
-# repository structure
-├── apps
-│   ├── client
-│   └── smart-contracts
-├── packages
-│   └── eslint-config-custom
-├── .github
-├── .eslintrc.js
-├── gitignore
-├── package.json
-├── README.md
-├── turbo.json
-└── yarn.lock
-```
+## Introduction
+In an age where healthcare systems are rapidly evolving, safeguarding sensitive medical information has become paramount. The increasing reliance on third-party providers like Amazon, Google, and Microsoft for data storage creates vulnerabilities that expose both patients and healthcare networks to cyber threats. With centralized storage systems susceptible to breaches, patients are often left disconnected from their own medical histories. Patientport emerges as a groundbreaking solution, leveraging decentralization to provide a secure and transparent way to manage medical data.
 
-## 💡 Inspiration
+## What is Patientport?
+Patientport is a decentralized, blockchain-based platform that revolutionizes how medical records are accessed, shared, and secured. Built on the Ethereum blockchain, Patientport offers patients full control over their medical data while ensuring end-to-end encryption and secure storage through smart contracts.
 
-As healthcare is continuing to be more interconnected and advanced, patients and healthcare resources will always have to worry about data breaches and the misuses of private information. While healthcare facilities move their databases to third-party providers (Amazon, Google, Microsoft), patients become further distanced from accessing their own medical record history, and the complete infrastructure of healthcare networks are significantly at risk and threatened by malicious actors. Even a single damaging attack on a centralized storage solution can end up revealing much sensitive and revealing data.
+![image](https://github.com/user-attachments/assets/cbe2cde0-af81-4cbd-9505-b477083a8cc9)
 
-To combat this risk, we created Patientport as a decentralized and secure solution for patients to easily view the requests for their medical records and take action on them.
 
-## 💻 What it does
+## Core Features
+- **Decentralized Record Management:** All medical record requests, responses, and exchanges are managed securely via blockchain smart contracts.
+- **Data Encryption:** Patient data is encrypted before being stored, ensuring privacy and protection against unauthorized access.
+- **Patient-Centric Access:** Patients can easily monitor and manage medical record requests through the web application hosted on patientport.tech.
+- **Blockchain Integration:** Seamless integration with MetaMask for authentication and interaction with smart contracts.
 
-Patientport is a decentralized, secure, and open medical record solution. It is built on the Ethereum blockchain and securely stores all of your medical record requests, responses, and exchanges through smart contracts. Your medical data is encrypted and stored on the blockchain.
+## How It Works
+1. **Authentication:** Patients log in to the platform using MetaMask and connect their blockchain wallet.
+2. **Smart Contract Access:** By providing a contract address issued by their primary care provider, patients gain access to their personal "patientport" smart contract.
+3. **Request Management:** Patients can view, approve, or deny medical record requests directly on the blockchain.
+4. **Secure Deployment:** While the demo connects to a locally hosted Ethereum blockchain, the solution is deployable on the Ethereum mainnet for real-world use.
 
-By accessing the powerful web application online through [patientport.tech](https://www.patientport.tech/), the patient can gain access to all these features.
+## Technologies Used
+| **Application**         | **Purpose**                                     |
+|--------------------------|-------------------------------------------------|
+| React, Chakra UI         | Front-end development and user interface design|
+| Ethers.js, Solidity      | Blockchain and smart contract implementation   |
+| MetaMask                 | Authentication and blockchain interaction      |
+| Netlify                  | Hosting the web application                    |
+| Figma, undraw.co         | Visual design and prototyping                  |
 
-First, on the website, the patient authenticates to the blockchain via MetaMask, and provides the contract address that was provided to them from their primary care provider.
 
-Once they complete these two steps, a user has the ability to view all requests made about their medical record by viewing their “patientport” smart contract that is stored on the blockchain.
+![image](https://github.com/user-attachments/assets/be91cd71-c661-4921-8b48-33401e729ef9)
 
-For demo purposes, the instance of the Ethereum blockchain that the application connects to is hosted locally.
 
-However, anyone can compile and deploy the smart contracts on the Ethereum mainnet and connect to our web app.
+![image](https://github.com/user-attachments/assets/3156b111-d551-4ca9-8785-bf862aa29357)
+![image](https://github.com/user-attachments/assets/b00efab0-6e0d-4174-b78f-686a4a3f2830)
 
-## ⚙️ How we built it
 
-<table>
-  <tr>
-   <td><strong>Application</strong>
-   </td>
-   <td><strong>Purpose</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>React, React Router, Chakra UI
-   </td>
-   <td>Front-end web application
-   </td>
-  </tr>
-  <tr>
-   <td>Ethers, Solidity, MetaMask
-   </td>
-   <td>Blockchain, Smart contracts
-   </td>
-  </tr>
-  <tr>
-   <td>Netlify
-   </td>
-   <td>Hosting
-   </td>
-  </tr>
-  <tr>
-   <td>Figma, undraw.co
-   </td>
-   <td>Design
-   </td>
-  </tr>
-</table>
+## Key Challenges
+- **Blockchain Integration:** Adapting to the ethers.js library due to compatibility issues with web3.js and React.
+- **Smart Contract Development:** Navigating Solidity’s complexities and debugging errors with limited prior experience.
+- **Time Constraints:** Balancing ambition with the need to deliver a functional prototype within a limited timeframe.
 
-## 🧠 Challenges we ran into
+## Milestones Achieved
+- Successfully developed a functional prototype that demonstrates the concept.
+- Designed a clean and intuitive user interface using modern UI libraries.
+- Enabled seamless interaction with the Ethereum blockchain through MetaMask.
+- Built and deployed secure smart contracts that encrypt and store patient data.
 
-- Implementation of blockchain and smart contracts was very difficult, especially since the web3.js API was incompatible with the latest version of react, so we had to switch to a new, unfamiliar library, ethers.
-- We ran into many bugs and unfamiliar behavior when coding the smart contracts with Solidity due to our lack of experience with it.
-- Despite our goals and aspirations for the project, we had to settle to build a viable product quickly within the timeframe.
+## Lessons Learned
+- **Blockchain Mastery:** Gained hands-on experience with blockchain technology and smart contracts for secure data transactions.
+- **Team Collaboration:** Learned to coordinate and collaborate effectively in a remote development environment using GitHub.
+- **Front-End Development:** Enhanced skills in React to create an accessible and user-friendly web application.
 
-## 🏅 Accomplishments that we're proud of
+## Future Plans
+- **Enhanced Features:** Expand the functionality of Patientport by integrating more robust smart contracts and improved blockchain connectivity.
+- **Healthcare Professional Tools:** Develop a dedicated interface for medical professionals to manage patient data efficiently through blockchain-enabled solutions.
+- **Scalability:** Deploy Patientport on the Ethereum mainnet for real-world application and scalability.
 
-- Implementing a working and functioning prototype of our idea
-- Designing and developing a minimalist and clean user interface through a new UI library and reusable components with a integrated design
-- Working closely with Solidity and MetaMask to make an application that interfaces directly with the Ethereum blockchain
-- Creating and deploying smart contracts that communicate with each other and store patient data securely
+Patientport aims to empower patients by providing them with full control and visibility over their medical records, ensuring privacy, security, and accessibility in the modern digital age.
 
-## 📖 What we learned
 
-- How to work with the blockchain and smart contracts to make decentralized transactions that can accurately record and encrypt/decrypt transactions
-- How to work together and collaborate with developers in a remote environment via Github
-- How to use React to develop a fully-featured web application that users can access and interact with
-
-## 🚀 What's next for patientport
-
-- Implementing more features, data, and information into patientport via a more robust smart contract and blockchain connections
-- Developing a solution for medical professionals to handle their patients’ data with patientport through a simplified interface of the blockchain wallet
